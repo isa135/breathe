@@ -1,4 +1,4 @@
-import './style.css'
+// import './style.css'
 
 var seconds = 0;
 var el = document.getElementById('seconds-counter');
