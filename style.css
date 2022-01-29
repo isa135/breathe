@@ -48,14 +48,6 @@ body {
   margin: 15px;
 }
 
-.conteudo-principal-botao {
-  width: 100px;
-  height: 50px;
-  /* background: #FEA8A7; */
-  background: #FE9895;;
-  border-radius: 45px;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -63,15 +55,6 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-#circle {
-  width: 350px;
-  height: 350px;
-  -webkit-border-radius: 175px;
-  -moz-border-radius: 175px;
-  border-radius: 175px;
-  background: #E7E3FF;
 }
 
 .header {
@@ -92,6 +75,60 @@ body {
   font-family: 'Righteous', cursive;
 }
 
+
+.conteudo-principal-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 300px;
+}
+
+#circle {
+  position: relative;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  margin: 0px;
+  /* position: absolute; */
+  left: 0;
+  /* top: -800; */
+  right: 0;
+  bottom: 0;
+  border: 1px solid #E7E3FF;
+  box-sizing: border-box;
+  background-color: #E7E3FF;
+  /* animation: hide2 8s ease infinite; */
+}
+
+@keyframes hide2 {
+  0% {transform: scale(0.1)}
+  50% {transform: scale(1)}
+  100% {transform: scale(0.1)}
+}
+
+.conteudo-principal-botao {
+  font-family: 'Righteous', cursive;
+  font-size: 18px;
+  margin: 10px;
+  color:  #FEE5C3;
+  width: 100px;
+  height: 50px;
+  border: none;
+  /* background: #FEA8A7; */
+  /* background: #FE9895;; */
+  background: #FE9895;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
+.conteudo-principal-botao:hover {
+  background-color: #FEE5C3;
+  color: #FE9895;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -105,30 +142,3 @@ body {
 .footer-imagem {
   width: 40px;
 }
-
-#circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin: 0px;
-  /* position: absolute; */
-  left: 0;
-  top: -200;
-  right: 0;
-  bottom: 0;
-  background-color: #FE9895;
-  /* animation: hide2 8s ease infinite; */
-}
-
-@keyframes hide2 {
-  0% {transform: scale(0.1)}
-  50% {transform: scale(1)}
-  100% {transform: scale(0.1)}
-}
-
-/* #circle2 {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: #FE9895;
-} */

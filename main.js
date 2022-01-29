@@ -10,13 +10,10 @@ var el = document.getElementById('seconds-counter');
 const teste = document.querySelector("#circle");
 var refreshIntervalId;
 
-document.getElementById("circle").addEventListener("click", function( event ) {
-  console.log("Clicou no botão");
-  // event.target.innerHTML = "Total de cliques: " + event.detail;
+document.getElementById("btnStart").addEventListener("click", function( event ) {
+  document.getElementById("btnStart").style.display = "none";
   teste.style.animation = "";
-  // setTimeout(() => teste.style.animation = "hide2 8s ease infinite", 0);
   setTimeout(animacao(), 0);
-
   seconds = 0;
   refreshIntervalId = setInterval(incrementSeconds, 1000);
 }, false);
@@ -29,10 +26,11 @@ function incrementSeconds() {
       teste.style.animation = ""
       clearInterval(refreshIntervalId);
       el.innerText = "";
+      document.getElementById("btnStart").style.display = "block";
     }
 }
 
 function animacao() {
-  teste.style.animation = "hide2 8s ease infinite"
+  teste.style.animation = "hide2 10s ease infinite"
 }
 
