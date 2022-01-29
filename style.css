@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rochester&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 5px solid #FEA8A7;
+  margin: 0px;
+  padding: 10px;
+  background: linear-gradient(90.57deg, #FED3B3 38.75%, #FED5B5 54.3%, #FEDCBB 63.19%, #FEE5C3 72.45%);
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding-left: 10px;
+}
+
+.header-text {
+  font-size: 36px;
+  padding-left: 15px;
+}
+
+.header-menu-item {
+  font-size: 18px;
+  padding: 20px;
+  gap: 50px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 15px;
+}
+
+.conteudo-principal-botao {
+  width: 100px;
+  height: 50px;
+  /* background: #FEA8A7; */
+  background: #FE9895;;
+  border-radius: 45px;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+#circle {
+  width: 350px;
+  height: 350px;
+  -webkit-border-radius: 175px;
+  -moz-border-radius: 175px;
+  border-radius: 175px;
+  background: #E7E3FF;
+}
+
+.header {
+  color: #FE9895;
+}
+
+.header-text {
+  font-family: 'Rochester', cursive;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 255);
+  /* text-shadow: 0px 4px 4px rgba(254, 168, 167, 0.25); */
+}
+
+.header-image {
+  width: 100px;
+}
+
+.header-menu {
+  font-family: 'Righteous', cursive;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #FE9895;
+  padding: 10px;
+  gap: 50px;
+}
+
+.footer-imagem {
+  width: 40px;
+}
+
+#circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0px;
+  /* position: absolute; */
+  left: 0;
+  top: -200;
+  right: 0;
+  bottom: 0;
+  background-color: #FE9895;
+  /* animation: hide2 8s ease infinite; */
+}
+
+@keyframes hide2 {
+  0% {transform: scale(0.1)}
+  50% {transform: scale(1)}
+  100% {transform: scale(0.1)}
+}
+
+/* #circle2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FE9895;
+} */
