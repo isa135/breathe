@@ -1,4 +1,4 @@
-// import './style.css'
+console.log("Chegou no main.js")
 
 var seconds = 0;
 var el = document.getElementById('seconds-counter');
