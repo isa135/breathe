@@ -11,7 +11,9 @@ const teste = document.querySelector("#circle");
 var refreshIntervalId;
 
 document.getElementById("btnStart").addEventListener("click", function( event ) {
-  document.getElementById("btnStart").style.display = "none";
+  // document.getElementById("btnStart").style.display = "none";
+  document.getElementById("btnStart").setAttribute("disabled","disabled");
+  console.log("Clicou")
   teste.style.animation = "";
   setTimeout(animacao(), 0);
   seconds = 0;
@@ -26,7 +28,8 @@ function incrementSeconds() {
       teste.style.animation = ""
       clearInterval(refreshIntervalId);
       el.innerText = "";
-      document.getElementById("btnStart").style.display = "block";
+      // document.getElementById("btnStart").style.display = "block";
+      document.getElementById("btnStart").removeAttribute("disabled");
     }
 }
 
